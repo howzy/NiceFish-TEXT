@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+import { flyIn } from '../../animations/fly-in';
+
+@Component({
+  selector: 'app-user-main',
+  templateUrl: './user-main.component.html',
+  styleUrls: ['./user-main.component.css'],
+  animations: [flyIn]
+})
+export class UserMainComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  doFollow() {
+    alert('自己不能关注自己！');
+  }
+
+}
